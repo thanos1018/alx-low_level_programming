@@ -3,23 +3,20 @@
 /**
  * main - Entry point of the program
  *
- * Return: Always 1
+ * Description: Prints a message to the standard error
+ * using the write function
+ *
+ * Return: Always 1 (Error)
  */
+
 int main(void)
 {
-    const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    const size_t len = sizeof("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+    ssize_t len = sizeof("and that piece of art is useful" - 1);
 
-    /* Write the message to the standard error */
-    ssize_t count = write(STDERR_FILENO, msg, len);
+    /* write to the standard error */
+    write(STDERR_FILENO, "and that piece of art is useful\n", len);
 
-    /* Check if the write operation was successful */
-    if (count != (ssize_t)len)
-    {
-        return 1;
-    }
-
-    return 1;
+    return (1);
 }
 
 
