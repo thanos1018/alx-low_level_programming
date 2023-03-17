@@ -1,18 +1,21 @@
-#include <stdio.h>
 /**
-* main - Prints the lowercase alphabet in reverse, followed by a new line, using only putchar function twice.
+* main - Entry point
 *
-* Return: Always 0.
+* Description: Prints the lowercase alphabet in reverse,
+*              followed by a new line, using putchar function only twice
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-char letter = 'z'; // start with the letter 'z'
-while (letter >= 'a') // iterate through the alphabet in reverse order
+char letter = 'z';
+while (letter >= 'a')
 {
-putchar(letter); // print the current letter
-letter--; // move to the previous letter
+putchar(letter);
+letter--;
 }
-putchar('\n'); // print a newline character
+putchar('\n');
 return (0);
 }
+
 
