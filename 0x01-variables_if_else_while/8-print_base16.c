@@ -8,21 +8,20 @@
 */
 int main(void)
 {
-int num;
+int i;
 char c;
-for (num = 0; num < 10; num++)
-{
-c = num + '0';
+for (i = 0; i < 10; i++) {
+c = i + '0';
 putchar(c);
 }
-for (num = 0; num < 6; num++)
-{
-c = num + 'a';
+for (i = 0; i < 6; i++) {
+c = i + 'a';
 putchar(c);
 }
 putchar('\n');
-return (0);
+return 0;
 }
+
 
 
 
