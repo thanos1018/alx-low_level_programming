@@ -16,7 +16,9 @@ putchar(',');
 putchar(' ');
 }
 }
+putchar('\n'); /* Add a newline character to the end of the output */
 return (0);
 }
+
 
 
