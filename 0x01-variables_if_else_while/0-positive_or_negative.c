@@ -24,6 +24,6 @@ else
 {
 printf("is negative\n"); /* If n is negative, print "is negative" */
 }
- return (0);
+return (0);
 }
 
