@@ -7,23 +7,17 @@
 int main(void)
 {
 int i;
-unsigned long int num1 = 0, num2 = 1, next;
-for (i = 0; i < 50; i++)
-{
-if (i < 2)
-next = i;
-else
+nsigned long int num1 = 1, num2 = 2, next;
+printf("%lu, %lu", num1, num2);
+for (i = 3; i <= 50; i++)
 {
 next = num1 + num2;
+printf(", %lu", next);
 num1 = num2;
 num2 = next;
 }
-printf("%lu", next);
-if (i == 49)
 printf("\n");
-else
-printf(", ");
-}
 return (0);
 }
+
 
