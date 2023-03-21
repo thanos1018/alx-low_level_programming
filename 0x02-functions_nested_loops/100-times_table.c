@@ -15,10 +15,21 @@ return;
 }
 for (i = 0; i <= n; i++) {
 for (j = 0; j <= n; j++) {
-printf("%d\t", i * j); // print the product of i and j
+printf("%d\t", i * j); /* print the product of i and j */
 }
-printf("\n"); // move to the next line after printing the row
+printf("\n"); /* move to the next line after printing the row */
 }
 }
+/**
+* main - entry point
+*
+* Return: 0 on success
+*/
+int main(void)
+{
+print_times_table(2);
+return 0;
+}
+
 
 
