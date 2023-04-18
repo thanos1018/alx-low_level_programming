@@ -29,7 +29,7 @@ int _strlen(char *s)
  * @src: string to be copied
  *
  * Return: the pointer to dest
- */ 
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int len, i;
@@ -80,7 +80,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog->owner == NULL)
 	{
 		free(dog);
-		free(dog->name;
+		free(dog->name);
 		return (NULL);
 	}
 	_strcpy(dog->name, name);
